@@ -19,10 +19,16 @@ a:active {
 	display: block;
 	background-color: black;
 	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
 }
 
 #logo {
 	vertical-align: middle;
+}
+
+.full {
+  background: url(../assets/arb.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
