@@ -1,0 +1,28 @@
+a {
+	font-family: 'Exo 2', sans-serif;
+	text-decoration: none;
+	color: white;
+	padding: 0px 12px 0px 12px;
+}
+
+/* mouse over link */
+a:hover {
+    color: orange;
+}
+
+/* selected link */
+a:active {
+    color: orange;
+}
+
+#navbar_wrapper {
+	display: block;
+	background-color: black;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#logo {
+	vertical-align: middle;
+}
