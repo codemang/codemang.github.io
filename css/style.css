@@ -4,8 +4,9 @@ html, body {
 }
 
 a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 20px;
+  font-weight: 200;
 	text-decoration: none;
 	color: white;
 	padding: 0px 12px 0px 12px;
@@ -13,7 +14,7 @@ a {
 
 h3 {
   font-size: 40px;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Dosis', sans-serif;
   color: white;
   margin-top: 150px;
 }
