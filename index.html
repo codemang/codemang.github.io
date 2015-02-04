@@ -1,32 +1,64 @@
 <!doctype html>
-<html class="full" lang="en">
+<html lang="en">
 	<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <title>A.N.D.</title>
 
  		<link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
- 		<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/flip.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
+
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="navbar/responsive-nav.js-master/responsive-nav.min.js"></script>
 	</head>
 
 	<body>
+    <div class="content_wrapper">
+      <header>
+        <nav class="nav-collapse">
+          <ul>
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="#">THE TEAM</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
 
-		<!-- Navigation bar -->
-		<div id='navbar_wrapper'>
 
-			<nav>
-				<a href="index.html">HOME</a>
-				<a href="index.html">THE TEAM</a>
-				<a href="index.html"><img id='logo' src="assets/logo_placeholder.png" alt="A.N.D. Logo" height="100" width="100"></a>
-				<a href="index.html">PROJECTS</a>
-				<a href="index.html">CONTACT US</a>
-			</nav>
 
-		</div>
+  <!--<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    <div class="flipper">
+      <div class="team_image front">
+       </div>
+       <div class="team_image back">
+       </div>
+     </div>
+   </div>-->
 
-    <div class='content_wrapper'>
-      I am le cool 
+      <div class="section">
+        <img class="fullscreen launch_image" src="assets/arb.jpg">
+        <div class="overlay">
+          <h3> Our Mission</h3> 
+        </div>
+      </div>
     </div>
+
+
+    <!--<p>Interested in working with us? We would love to hear from you. Send us a message telling us what kind of project you're interested in. Please specify in detail what the project will do and what platforms you wish to support. Our team will have a preliminary discussion and then get back to you as soon as possible to discuss project specifics, timeline, and compensation.
+    <input type="text" placeholder="Your Email"/>
+    <textarea rows="10" cols="50" placeholder="Your Message"></textarea>-->
+
+<script>
+        var navigation = responsiveNav(".nav-collapse", {
+                  insert: "before"
+                        });
+            </script>
 	</body>
 </html>
