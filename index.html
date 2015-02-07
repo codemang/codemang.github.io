@@ -7,9 +7,12 @@
     <title>A.N.D.</title>
 
     <link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" type="text/css" href="css/Skeleton-2.0.4/css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/temp.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/main.js"></script>
@@ -22,7 +25,7 @@
 	<body>
 
     <div class="parallax">
-      <div class="parallax__layer parallax__layer--back overlay">
+      <div class="parallax__layer parallax__layer--back overlay1">
       </div>
       <div class="parallax__layer parallax__layer--back">
         <div class="me-section">
@@ -32,7 +35,76 @@
         </div>
       </div>
       <div class="parallax__layer parallax__layer--base">
-        <div class="second"></div>
+        <div class="main-body">
+          <!-- Nav Bar -->
+          <header>
+            <a href="#home" class="logo">Netanel Rubin</a>
+            <img src="icons/hamburger.png" class="menu-button">
+            <nav class="nav-collapse">
+              <ul>
+                <li class="nav-item-container active"><a class="nav-item" href="#">HOME</a></li>
+                <li class="nav-item-container"><a class="nav-item" href="#">THE TEAM</a></li>
+                <li class="nav-item-container"><a class="nav-item" href="#">PROJECTS</a></li>
+                <li class="nav-item-container"><a class="nav-item" href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+          </header> 
+
+
+          <!-- First Section -->
+
+          <div class="section section1">
+
+            <div class="column-container">
+              <div class="row">
+                <div class="six columns">
+                  <p class="section-title">BIO</p> 
+                  <p class="section-body">
+                    Hi. My name is Netanel but I go by Nate. I interned at <span class="emphasis">Google</span> and will start working at the startup <span class="emphasis">BookBub</span> in the Fall. IOS apps and Chrome Extensions are my favorite projects to work on. Getting more and more interested in open source projects.<br><br>One day I want to create a startup related to <span class="emphasis">Education</span> or <span class="emphasis">Politics</span>.<br><br>In addition to building software, I enjoy building physical things like <span class="emphasis">bikes</span> and <span class="emphasis">speakers</span>. 
+                  </p>
+                </div>
+                <div class="six columns">
+                  <p class="section-title">ETHOS</p> 
+                  <p class="section-body">
+                    Every product must be <i>usable</i><br>
+                    Never compromise  <br>
+                    The small details can make or break it<br>
+                    Scalability, Extensibility, and Robustness<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!--<div class="section-title">ABOUT ME</div>
+            <p class="about-me">
+              Hi. My name is Netanel but I go by Nate. I'm a fullstack developer with experience in IOS, WebDev, and more. My passion is starting projects from scratch with a. Although my formal training was back-end oriented, I love design and making products . Let this website be a testimony to that.
+              </p>
+            <div class="arrow-up" style="background-color:blue"></div>
+          </div>-->
+          <div class="section section2">
+
+          </div>
+          <div class="section section3">
+            <div class="column-container">
+              <div class="row">
+                <div class="six columns">
+                  <p class="section-title">CONTACT</p> 
+                </div>
+                <div class="six columns">
+                </div>
+              </div>
+            </div>
+            <p class="another-title">Let's build something.</p>
+            <form>
+              <input type='text' class='contact-input' placeholder='Name'/>
+              <input type='text' class='contact-input' placeholder='Your Email'/>
+              <input type='text' class='contact-input' placeholder='Subject'/>
+              <textarea class='contact-input' rows="5" cols="50" placeholder="Message">
+              </textarea>
+          </div>
+
+
+        </div>
       </div>
     </div>
 
