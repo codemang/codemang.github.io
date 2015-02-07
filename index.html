@@ -6,61 +6,36 @@
 
     <title>A.N.D.</title>
 
- 		<link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
-    <link rel="stylesheet" type="text/css" href="css/flip.css">
+    <link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
 
-<link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/responsive-nav.js"></script>
+
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 	</head>
 
 	<body>
-    <div class="content_wrapper">
-      <header>
-            <a href="#home" class="logo" data-scroll>Fixed Nav</a>
 
-        <nav class="nav-collapse">
-          <ul>
-            <li class="active"><a href="#">HOME</a></li>
-            <li><a href="#">THE TEAM</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-      </header>
-
-
-
-  <!--<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-    <div class="flipper">
-      <div class="team_image front">
-       </div>
-       <div class="team_image back">
-       </div>
-     </div>
-   </div>-->
-
-      <div class="section">
-        <img class="fullscreen launch_image" src="assets/arb.jpg">
-        <div class="overlay">
-          <h3> Our Mission</h3> 
+    <div class="parallax">
+      <div class="parallax__layer parallax__layer--back overlay">
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="me-section">
+          <div class="avatar"></div>
+          <div class="name">NATE RUBIN</div> 
+          <div class="full-stack">FULL STACK DEVELOPER</div> 
         </div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="second"></div>
       </div>
     </div>
 
 
-    <!--<p>Interested in working with us? We would love to hear from you. Send us a message telling us what kind of project you're interested in. Please specify in detail what the project will do and what platforms you wish to support. Our team will have a preliminary discussion and then get back to you as soon as possible to discuss project specifics, timeline, and compensation.
-    <input type="text" placeholder="Your Email"/>
-    <textarea rows="10" cols="50" placeholder="Your Message"></textarea>-->
-
-<script>
-        var navigation = responsiveNav(".nav-collapse", {
-                  insert: "before"
-                        });
-            </script>
 	</body>
 </html>

@@ -1,83 +1,108 @@
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-a {
-  font-family: 'Dosis', sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-	text-decoration: none;
-	color: white;
-	padding: 0px 12px 0px 12px;
-}
-
-h3 {
-  font-size: 40px;
-  font-family: 'Dosis', sans-serif;
-  color: white;
-  margin-top: 150px;
-}
-
-/* mouse over link */
-a:hover {
-    color: orange;
-}
-
-/* selected link */
-a:active {
-    color: orange;
-}
-
-#navbar_wrapper {
-	display: block;
-	background-color: black;
-	text-align: center;
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  z-index: 100;
-}
-
-#logo {
-	vertical-align: middle;
-}
-
-.full {
-  background: url(../assets/arb.jpg) no-repeat center center fixed; 
+html { 
+  background: url('../icons/sickGraphic2.gif') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.fullscreen {
-  width: 100vw;
-  height: 100vh;
+
+.parallax {
+    perspective: 1px;
+      height: 100vh;
+        overflow-x: hidden;
+          overflow-y: auto;
+}
+.parallax__layer {
+    position: absolute;
+      top: 0;
+        right: 0;
+          bottom: 0;
+            left: 0;
+}
+.parallax__layer--base {
+    transform: translateZ(0);
+  margin-top: 70vh;
+}
+.parallax__layer--back {
+    transform: translateZ(-1px);
 }
 
-.launch_image {
-  vertical-align: middle;
+.parallax__layer--back {
+    transform: translateZ(-4px) scale(6);
+}
+
+.first {
+  height: 100px;
+  width: 100vw;
+  background-color:red;
+}
+
+
+.second {
+  height: 800px;
+  width: 100vw;
+  background-color:blue;
+}
+
+.me-section {
+  transition: margin-top 2s;
+   -webkit-transition: margin-top 2s linear;
+   -webkit-transition: background-color 0.3s;
+       -moz-transition: background-color 0.3s;
+           -o-transition: background-color 0.3s;
+               transition: background-color 0.3s;
+  margin-top: -100px;
+  padding-top: 1px;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  bottom:0;
-  top: 0;
-  left: 0;
-  right: 0;
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 1%, rgba(0,0,0,0.64) 96%, rgba(0,0,0,0.65) 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0.01)), color-stop(96%,rgba(0,0,0,0.64)), color-stop(98%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.64) 96%,rgba(0,0,0,0.65) 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.64) 96%,rgba(0,0,0,0.65) 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.64) 96%,rgba(0,0,0,0.65) 98%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.64) 96%,rgba(0,0,0,0.65) 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 }
 
-.flip-container, .front, .back {
-  width: 250px;
-  height: 250px;
-  border-radius: 125px;
+.visible {
+  margin-top: 0px;
 }
 
-.resize {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  margin-left: 10px;
+.name {
+  color:white;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-size: 50px;
+}
+
+.full-stack {
+  color:white;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  margin-top: 50px;
+  color: rgb(187, 187, 187);
+  font-size: 17px;
+}
+
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  background-color: red;
+  border-radius: 35px;
+  transition: width .3s, height .3s, border-radius .3s, margin-top .3s, margin-bottom .3s;
+  margin-top: 130px;
+  margin-bottom: 20px
+}
+
+.avatar:hover {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-top: 125px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
