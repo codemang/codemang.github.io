@@ -75,6 +75,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   text-align: center;
   font-family: 'Dosis', sans-serif;
   font-size: 50px;
+  margin-top: 200px;
 }
 
 .full-stack {
@@ -93,16 +94,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   margin: 0 auto;
   background-color: red;
   border-radius: 35px;
-  transition: width .3s, height .3s, border-radius .3s, margin-top .3s, margin-bottom .3s;
-  margin-top: 130px;
-  margin-bottom: 20px
+  top: -210px;
+  transition: width .3s, height .3s, border-radius .3s, top .3s;
+  /*margin-top: 130px;
+  margin-bottom: 20px*/
+  position: relative;
 }
 
 .avatar:hover {
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  margin-top: 125px;
-  margin-bottom: 15px;
+  top: -215px;
   cursor: pointer;
 }

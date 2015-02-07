@@ -1,6 +1,8 @@
 $(document).ready(function() {
-  $(".me-section").addClass("visible");
+  setTimeout(function() {$(".me-section").addClass("visible");
+  }, 500);
   $(".avatar").on("click", function() {
-      $( this ).effect( "bounce", "slow" );
+      //$( this ).effect( "bounce", "slow" );
+      $( this ).effect( "slide", "slow" );
   });
 });
